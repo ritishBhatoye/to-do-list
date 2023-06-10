@@ -1,0 +1,76 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  /*background-color: rgb(104, 104, 104);*/
+  background:url("https://th.bing.com/th/id/R.7d1f9bd205fe1ddc688f7870f125dd37?rik=q89mKcx32%2bz5gA&riu=http%3a%2f%2fimages.unsplash.com%2fphoto-1535320404287-416e2c6d2b41%3fixlib%3drb-0.3.5%26q%3d80%26fm%3djpg%26crop%3dentropy%26cs%3dtinysrgb%26w%3d1080%26fit%3dmax%26s%3d4d01d10a320adf2ec10d1b7f28a4d0fe&ehk=eoiSkIsHaKBNek27JfKxjXZofRnhXb9fT8TR1hQbSCs%3d&risl=&pid=ImgRaw&r=0");
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+.blur
+{
+  background-color:rgb(173, 231, 226);
+    max-width:50%;
+    height: 70vh;
+    box-sizing:border-box;
+    background: rgba(180, 180, 180, 0.059);
+			box-shadow: 1px 1px 15px black;
+			z-index:0;
+}
+h3 {
+  text-align: center;
+  margin-top: 20px;
+  padding:auto;
+  color: aliceblue;
+  text-shadow:2px 3px black;
+}
+form {
+  position: fixed;
+  bottom: 350px;
+  right: 30%;
+  left: 30%;
+  height: 2.25rem;
+  border-radius: 8px;
+  border: 2px solid rgb(66, 66, 180);
+  color: #000;
+  box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.items {
+  position: fixed;
+  top: 50px;
+  right: 30%;
+  left: 30%;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
+.completedTodo {
+  background-color: darkgray;
+  text-decoration: line-through;
+}
+.check
+{
+  float:right;
+}
+.floating
+{
+animation-duration:1.75s;
+animation-name: flows;
+animation: flows 2s linear 00.25s 1 normal;
+}
+@keyframes flows
+{
+ from{opacity:0.4;}
+ to{opacity: 0;}
+
+}
